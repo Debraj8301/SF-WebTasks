@@ -1,0 +1,273 @@
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+}
+/* to style the list on the acheivements page */
+.acheive ul{
+  position: absolute;
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 375px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #042331;
+  box-shadow: inset 0 0 15px #021017;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.acheive ul li {
+  display: flex;
+  background: #063146;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.acheive ul li:nth-child(1){
+  background: #0c628d;
+}
+.acheive ul li:nth-child(2){
+  background: #0a5275;
+}
+.acheive ul li:nth-child(3){
+  background: #08415e;
+}
+.acheive ul li span:nth-child(1){
+  width: 50px;
+}
+.acheive ul li span:nth-child(2){
+  width: 350px;
+}
+.acheive ul li span:nth-child(3){
+  width: 200px;
+  text-align: right;
+}
+.acheive ul li span:nth-child(4){
+  width: 200px;
+  text-align: right;
+}
+.acheive ul li:hover {
+  transform: scale(1.06);
+  background:  #042331;
+  cursor: pointer;
+}
+section {
+  background: url("bimage.jpg");
+  background-size: cover;
+  height: 120vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+
+}
+/* To style the side navigation bar */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a li{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+
+}
+#check:checked ~ section {
+  margin-left: 250px;
+
+}
+/* for styling the home page profile image */
+img {
+  float: right;
+  height: 300px;
+  margin-right: 400px;
+  margin-top: 100px;
+  border-radius: 100%;
+  border: 5px solid #0a5275;
+
+}
+img:hover {
+  box-shadow: 0 0 8px 5px rgba(0, 140, 186, 0.5);
+}
+
+/* for styling the headers and paragraphs */
+h1 {
+  font-size: 40px;
+  font-family: 'Bungee', cursive;
+  color: #042331;
+  letter-spacing: 3px;
+
+
+}
+.h:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition-delay: 0.333s;
+}
+.t {
+  font-size: 40px;
+  font-family: 'Bungee', cursive;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.a{
+  font-size: 25px;
+  font-family: 'Bungee', cursive;
+  color: #063146;
+
+}
+.b {
+  font-family: 'Bungee', cursive;
+  color: #063146;
+}
+
+/* for styling the divs on different pages */
+.con {
+  float: right;
+  margin-right: -425px;
+  margin-top: 425px;
+  text-align: center;
+}
+
+
+
+.acad {
+    margin-left: 50px;
+    text-align: center;
+
+
+}
+/* to style the table on the academics page */
+.table {
+  align-items: center;
+  align-self: center;
+  border-collapse: collapse;
+  margin:  25px 300px;
+  font-size: 1.5em;
+  min-width: 800px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.table thead tr {
+  background-color: #063146;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.table th, .table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+    border-bottom: 1px solid #063146;
+}
+.table tbody tr:last-of-type {
+  border-bottom: 3px solid #063146;
+}
+.table tbody tr.active {
+  font-weight: bold;
+  color: #042331;
+}
+.table tbody tr:hover {
+  color: #042331;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+/* for styling the buttons */
+.button {
+  background-color: #042331;
+  border: 10px solid #021118;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 5px;
+
+}
+#f{
+  margin-left: 1300px;
+  margin-top: 70px;
+}
+#f a {
+  background-color: #042331;
+  border: 10px solid #021118;
+  border-radius: 8px;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+}

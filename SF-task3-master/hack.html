@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Hacked Ludo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="trial .css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="main">
+      <div class="winner1"><h1>Player 1 Wins !!</h1>
+        <a href="index.html" class = "win">RESTART</a>
+      </div>
+      <div class="winner2"><h1>Player 2 Wins !!</h1>
+        <a href="index.html" class = "win">RESTART</a>
+      </div>
+      <div class="gameboard">
+      <div class="row1">
+        <div id="pos1" class="box active-color1"><h1 class= "active">SAFE-ZONE</h1></div>
+        <div id="pos2" class="box"></div>
+        <div id="pos3" class="box"></div>
+        <div id="pos4" class="box"></div>
+        <div id="pos5" class="box"></div>
+        <div id="pos6" class="box"></div>
+        <div id="pos7" class="box"></div>
+        <div id="pos8" class="box"></div>
+      </div>
+      <div class="col2">
+        <div id="pos9" class="box"></div>
+        <div id="pos10" class="box"></div>
+        <div id="pos11" class="box"></div>
+        <div id="pos12" class="box"></div>
+        <div id="pos13" class="box"></div>
+        <div id="pos14" class="box"><i class="fas fa-flag"></i></div>
+
+
+      </div>
+      <div class="row2">
+        <div id="pos22" class="box"></div>
+        <div id="pos21" class="box"></div>
+        <div id="pos20" class="box"></div>
+        <div id="pos19" class="box"></div>
+        <div id="pos19" class="box"></div>
+        <div id="pos17" class="box"></div>
+        <div id="pos16" class="box"></div>
+        <div id="pos15" class="box active-color2"><h1 class= "active">SAFE-ZONE</h1></div>
+      </div>
+      <div class="col1">
+        <div id="pos28" class="box"><i class="fas fa-flag"></i></div>
+        <div id="pos27" class="box"></div>
+        <div id="pos26" class="box"></div>
+        <div id="pos25" class="box parent"></div>
+        <div id="pos24" class="box"></div>
+        <div id="pos23" class="box"></div>
+      </div>
+      <div class="roll">
+        <p id="turn"> Turn : Player 1</p>
+        <p id="status"> Enter a Number </p>
+        <img id="dice" src="dice1.png">
+      </div>
+      <div id ="players1" class="players1 parent1a parent1b">
+        <div id="p1a" class="player1a player1">
+        <i class="fas fa-male fa-3x color1"></i>
+        </div>
+        <div id="p1b" class="player1b player1">
+        <i class="fas fa-male fa-3x color1 "></i>
+        </div>
+      </div>
+      <div id ="players2" class="players2 parent2a parent2b">
+        <div id="p2a" class="player2a player2">
+        <i class="fas fa-male fa-3x  color2"></i>
+        </div>
+        <div id="p2b" class="player2b player2">
+          <i class="fas fa-male fa-3x  color2"></i>
+        </div>
+      </div>
+      <div id="win-box1" class="win-box1"></div>
+      <div id="win-box2" class="win-box2"></div>
+
+      </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="trial.js"></script>
+  </body>
+</html>
